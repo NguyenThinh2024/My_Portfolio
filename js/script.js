@@ -63,8 +63,8 @@ $(document).ready(function () {
         context1.fill();
         context1.strokeStyle = '#FFF';
         context1.stroke();
-        context1.fillStyle = '#110c11';
-        context1.strokeStyle = '#ff771c';
+        context1.fillStyle = '#0F172A';
+        context1.strokeStyle = '#22C55E';
         context1.lineWidth = 7;
         context1.beginPath();
         context1.arc(cw, ch, 85, start, diff + start, false);
@@ -85,8 +85,8 @@ $(document).ready(function () {
         context2.fill();
         context2.strokeStyle = '#FFF';
         context2.stroke();
-        context2.fillStyle = '#110c11';
-        context2.strokeStyle = '#ff771c';
+        context2.fillStyle = '#0F172A';
+        context2.strokeStyle = '#22C55E';
         context2.lineWidth = 7;
         context2.beginPath();
         context2.arc(cw, ch, 75, start, diff + start, false);
@@ -107,8 +107,8 @@ $(document).ready(function () {
         context3.fill();
         context3.strokeStyle = '#FFF';
         context3.stroke();
-        context3.fillStyle = '#110c11';
-        context3.strokeStyle = '#ff771c';
+        context3.fillStyle = '#0F172A';
+        context3.strokeStyle = '#22C55E';
         context3.lineWidth = 7;
         context3.beginPath();
         context3.arc(cw, ch, 85, start, diff + start, false);
@@ -129,8 +129,8 @@ $(document).ready(function () {
         context4.fill();
         context4.strokeStyle = '#FFF';
         context4.stroke();
-        context4.fillStyle = '#110c11';
-        context4.strokeStyle = '#ff771c';
+        context4.fillStyle = '#0F172A';
+        context4.strokeStyle = '#22C55E';
         context4.lineWidth = 7;
         context4.beginPath();
         context4.arc(cw, ch, 70, start, diff + start, false);
