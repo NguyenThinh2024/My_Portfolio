@@ -45,29 +45,31 @@ $(document).ready(function () {
     let al3 = 0;
     let al4 = 0;
     let start = 4.72;
-    var cw = context1.canvas.width / 2;
-    var ch = context1.canvas.height / 2;
     let diff;
 
     let executed = false;
 
     function progressBar1() {
         if (al1 >= 86) {
-            clearTimeout(bar1);
+            clearInterval(bar1);
             return;
         }
         diff = (al1 / 100) * Math.PI * 2;
-        context1.clearRect(0, 0, 140, 140);
+        var cw1 = context1.canvas.width / 2;
+        var ch1 = context1.canvas.height / 2;
+        var radius = Math.min(cw1, ch1) - 8;
+        context1.clearRect(0, 0, context1.canvas.width, context1.canvas.height);
         context1.beginPath();
-        context1.arc(cw, ch, 85, 0, 2 * Math.PI, false);
+        context1.fillStyle = '#0F172A';
+        context1.arc(cw1, ch1, radius, 0, 2 * Math.PI, false);
         context1.fill();
         context1.strokeStyle = '#FFF';
+        context1.lineWidth = 1;
         context1.stroke();
-        context1.fillStyle = '#0F172A';
         context1.strokeStyle = '#22C55E';
         context1.lineWidth = 7;
         context1.beginPath();
-        context1.arc(cw, ch, 85, start, diff + start, false);
+        context1.arc(cw1, ch1, radius, start, diff + start, false);
         context1.stroke();
         canvas1.nextElementSibling.innerText = al1;
         al1++;
@@ -75,21 +77,25 @@ $(document).ready(function () {
 
     function progressBar2() {
         if (al2 >= 76) {
-            clearTimeout(bar2);
+            clearInterval(bar2);
             return;
         }
         diff = (al2 / 100) * Math.PI * 2;
-        context2.clearRect(0, 0, 140, 140);
+        var cw2 = context2.canvas.width / 2;
+        var ch2 = context2.canvas.height / 2;
+        var radius = Math.min(cw2, ch2) - 8;
+        context2.clearRect(0, 0, context2.canvas.width, context2.canvas.height);
         context2.beginPath();
-        context2.arc(cw, ch, 75, 0, 2 * Math.PI, false);
+        context2.fillStyle = '#0F172A';
+        context2.arc(cw2, ch2, radius, 0, 2 * Math.PI, false);
         context2.fill();
         context2.strokeStyle = '#FFF';
+        context2.lineWidth = 1;
         context2.stroke();
-        context2.fillStyle = '#0F172A';
         context2.strokeStyle = '#22C55E';
         context2.lineWidth = 7;
         context2.beginPath();
-        context2.arc(cw, ch, 75, start, diff + start, false);
+        context2.arc(cw2, ch2, radius, start, diff + start, false);
         context2.stroke();
         canvas2.nextElementSibling.innerText = al2;
         al2++;
@@ -97,21 +103,25 @@ $(document).ready(function () {
 
     function progressBar3() {
         if (al3 >= 86) {
-            clearTimeout(bar3);
+            clearInterval(bar3);
             return;
         }
         diff = (al3 / 100) * Math.PI * 2;
-        context3.clearRect(0, 0, 140, 140);
+        var cw3 = context3.canvas.width / 2;
+        var ch3 = context3.canvas.height / 2;
+        var radius = Math.min(cw3, ch3) - 8;
+        context3.clearRect(0, 0, context3.canvas.width, context3.canvas.height);
         context3.beginPath();
-        context3.arc(cw, ch, 85, 0, 2 * Math.PI, false);
+        context3.fillStyle = '#0F172A';
+        context3.arc(cw3, ch3, radius, 0, 2 * Math.PI, false);
         context3.fill();
         context3.strokeStyle = '#FFF';
+        context3.lineWidth = 1;
         context3.stroke();
-        context3.fillStyle = '#0F172A';
         context3.strokeStyle = '#22C55E';
         context3.lineWidth = 7;
         context3.beginPath();
-        context3.arc(cw, ch, 85, start, diff + start, false);
+        context3.arc(cw3, ch3, radius, start, diff + start, false);
         context3.stroke();
         canvas3.nextElementSibling.innerText = al3;
         al3++;
@@ -119,21 +129,25 @@ $(document).ready(function () {
 
     function progressBar4() {
         if (al4 >= 71) {
-            clearTimeout(bar4);
+            clearInterval(bar4);
             return;
         }
         diff = (al4 / 100) * Math.PI * 2;
-        context4.clearRect(0, 0, 140, 140);
+        var cw4 = context4.canvas.width / 2;
+        var ch4 = context4.canvas.height / 2;
+        var radius = Math.min(cw4, ch4) - 8;
+        context4.clearRect(0, 0, context4.canvas.width, context4.canvas.height);
         context4.beginPath();
-        context4.arc(cw, ch, 70, 0, 2 * Math.PI, false);
+        context4.fillStyle = '#0F172A';
+        context4.arc(cw4, ch4, radius, 0, 2 * Math.PI, false);
         context4.fill();
         context4.strokeStyle = '#FFF';
+        context4.lineWidth = 1;
         context4.stroke();
-        context4.fillStyle = '#0F172A';
         context4.strokeStyle = '#22C55E';
         context4.lineWidth = 7;
         context4.beginPath();
-        context4.arc(cw, ch, 70, start, diff + start, false);
+        context4.arc(cw4, ch4, radius, start, diff + start, false);
         context4.stroke();
         canvas4.nextElementSibling.innerText = al4;
         al4++;
